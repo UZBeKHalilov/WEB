@@ -1,0 +1,26 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #0c0c0c; /* Replace with the identified color */
+    background-color: #ffffff; /* Replace with the identified color */
+  }
+  
+  /* Example Color Usage */
+  .header_section {
+    background-color: #1a1a2e; /* Dark Blue */
+  }
+  
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    color: #f0f0f0; /* Light Gray */
+  }
+  
+  .btn-box a {
+    background-color: #ff9505; /* Amber/Orange */
+    color: #ffffff;
+  }
+  
+  .btn-box a:hover {
+    background-color: #ffffff;
+    color: #ff9505; /* Amber/Orange */
+    border: 1px solid #ff9505;
+  }
+  
