@@ -62,38 +62,78 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var ruButton = document.getElementById('ru');
+  var uzButton = document.getElementById('uz');
 
-function toggleText() {
-    var text = document.getElementById("more-text");
-    var btn = document.getElementById("read-more-btn");
+  uzButton.addEventListener('click', function() {
+    ruButton.classList.remove('active');
+    uzButton.classList.add('active');
+  });
 
-    if (text.classList.contains("expanded-text")) {
-        text.classList.remove("expanded-text");
-        text.classList.add("hidden-text");
-        btn.innerHTML = "Читать дальше";
-    } else {
-        text.classList.remove("hidden-text");
-        text.classList.add("expanded-text");
-        btn.innerHTML = "Свернуть";
-    }
-}
+  ruButton.addEventListener('click', function() {
+    uzButton.classList.remove('active');
+    ruButton.classList.add('active');
+    document.body.style.backgroundColor = ''; // orqa fon rangini default holatga qaytarish uchun
+  });
+});
 
-function toggleText2(textId, btnId, ulId) {
-  var text = document.getElementById(textId);
-  var btn = document.getElementById(btnId);
-  var ul = document.getElementById(ulId);
-  if (text.classList.contains("expanded-text")) {
-      text.classList.remove("expanded-text");
-      text.classList.add("hidden-text");
-      btn.innerHTML = "Узнать больше";
-      ul.classList.remove("expanded-list");
-      ul.classList.add("hidden-list");
+// function toggleText() {
+//   var text = document.getElementById("more-text");
+//   var btn = document.getElementById("read-more-btn");
 
-  } else {
-      text.classList.remove("hidden-text");
-      text.classList.add("expanded-text");
-      btn.innerHTML = "Свернуть";
-      ul.classList.remove("hidden-list");
-      ul.classList.add("expanded-list");
-  }
-}
+//   if (text.classList.contains("expanded-text")) {
+//     text.classList.remove("expanded-text");
+//     text.classList.add("hidden-text");
+//     btn.innerHTML = "Читать дальше";
+//   } else {
+//     text.classList.remove("hidden-text");
+//     text.classList.add("expanded-text");
+//     btn.innerHTML = "Свернуть";
+//   }
+// }
+
+// function toggleText2(textId, btnId, ulId) {
+//   var text = document.getElementById(textId);
+//   var btn = document.getElementById(btnId);
+//   var ul = document.getElementById(ulId);
+//   if (text.classList.contains("expanded-text")) {
+//     text.classList.remove("expanded-text");
+//     text.classList.add("hidden-text");
+//     btn.innerHTML = "Узнать больше";
+//     ul.classList.remove("expanded-list");
+//     ul.classList.add("hidden-list");
+
+//   } else {
+//     text.classList.remove("hidden-text");
+//     text.classList.add("expanded-text");
+//     btn.innerHTML = "Свернуть";
+//     ul.classList.remove("hidden-list");
+//     ul.classList.add("expanded-list");
+//   }
+// }
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   // Smooth scroll function
+//   function scrollToTarget(element) {
+//     // Calculate offset for navbar height if needed (adjust the value as necessary)
+//     var navbarHeight = 60; // Example height; adjust as per your actual navbar height
+//     var target = document.querySelector(element.getAttribute('href'));
+//     if (target) {
+//       var offsetPosition = target.offsetTop - navbarHeight;
+//       window.scrollTo({
+//         top: offsetPosition,
+//         behavior: 'smooth'
+//       });
+//     }
+//   }
+
+//   // Add event listeners to each nav-link
+//   var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+//   navLinks.forEach(function (link) {
+//     link.addEventListener('click', function (e) {
+//       e.preventDefault(); // Prevent default anchor behavior
+//       scrollToTarget(link); // Scroll to the target section
+//     });
+//   });
+// });

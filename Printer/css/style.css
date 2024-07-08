@@ -6,9 +6,35 @@
 
 html {
   scroll-behavior: smooth !important;
+  /* Custom Scrollbar */
+  /* Scrollbar traki (yo'l) */
+  /* Scrollbar thumb (dragger) */
+  /* Scrollbar thumb hoverda */
 }
 html:focus-within {
   scroll-behavior: smooth !important;
+}
+html::-webkit-scrollbar {
+  width: 12px;
+  /* Scrollbar kengligi */
+}
+html::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Trackning rangi */
+  border-radius: 10px;
+  /* Burchaklarni yumaloqlash */
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Thumbning rangi */
+  border-radius: 10px;
+  /* Burchaklarni yumaloqlash */
+  border: 3px solid #f1f1f1;
+  /* Thumbning ichki chegara rangi */
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Thumb hover paytida rangi */
 }
 
 body {
@@ -594,4 +620,31 @@ footer.footer_bg {
 .expanded-list {
   display: block !important;
   transition: display 0.5s ease-in-out;
+}
+
+#ru,
+#uz {
+  color: white;
+  border-color: white;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #283D48;
+  background-color: transparent;
+  color: #283D48;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #283D48;
+  color: #fff;
+}
+
+.btn.active {
+  background-color: #283D48 !important;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
