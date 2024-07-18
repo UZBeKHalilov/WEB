@@ -1,19 +1,22 @@
 .footer-distributed {
+  clear: both;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  /* How to center? */
+  display: flex;
+  justify-content: space-between;
   padding: 55px 50px;
+  padding-bottom: 25px;
 }
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-  margin-top: 80px;
-  display: inline-block;
-  vertical-align: top;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  vertical-align: center;
 }
 .footer-distributed .footer-left {
-  width: 40%;
+  display: block;
   text-align: center;
 }
 .footer-distributed h3 {
@@ -42,16 +45,13 @@
   margin: 0;
 }
 .footer-distributed .footer-center {
-  width: 35%;
+  margin: 0 auto;
+  text-align: left !important;
 }
 .footer-distributed .footer-center i {
   background-color: #33383b;
   color: #ffffff;
   font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
   line-height: 42px;
   margin: 10px 15px;
   vertical-align: middle;
@@ -81,8 +81,9 @@
   margin: 0 10px;
   width: 50px;
 }
-.footer-distributed .footer-right {
-  width: 20%;
+.footer-distributed .footer-center div {
+  width: 280px;
+  margin: 0 auto;
 }
 .footer-distributed .footer-company-about {
   line-height: 20px;
@@ -125,7 +126,7 @@
 }
 
 /*
-.::before {
+  .::before {
     content: '';
     position: absolute;
     top: 0;
@@ -135,17 +136,20 @@
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.1); 
     z-index: -1; 
-  }
-*/
-/* Footer left */
-/* The company logo */
-/* Footer links */
-/* Footer Center */
+    }
+    */
 /* Footer Right */
+.footer-right {
+  margin: 0 auto;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
 .footer-right .map-container {
   position: relative;
-  width: 100%; /* Adjust as needed */
-  height: 250px; /* Adjust as needed */
+  width: 400px;
+  height: 250px;
+  /* Adjust as needed */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
@@ -170,17 +174,21 @@
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
-@media (max-width: 880px) {
+@media (max-width: 1200px) {
   .footer-distributed {
     font: bold 14px sans-serif;
-  }
-  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
     display: block;
-    width: 100%;
-    margin-bottom: 40px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100% !important;
+    margin-bottom: 40px !important;
     text-align: center;
   }
-  .footer-distributed .footer-left .map-container, .footer-distributed .footer-center .map-container, .footer-distributed .footer-right .map-container {
+  .footer-distributed .footer-left .map-container,
+  .footer-distributed .footer-center .map-container,
+  .footer-distributed .footer-right .map-container {
     width: 100%;
     height: auto;
   }
@@ -192,4 +200,8 @@
   width: 20% !important;
   margin: 0 auto !important;
   margin-top: 20px !important;
+}
+
+.text-left {
+  text-align: left !important;
 }/*# sourceMappingURL=footer.css.map */

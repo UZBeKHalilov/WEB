@@ -658,7 +658,6 @@ a {
 #footer {
   font-weight: 500;
   justify-content: center;
-  padding: 20px;
   background-color: #1d1d1d;
 
   p {
@@ -787,4 +786,34 @@ footer.footer_bg {
 .btn.active {
   background-color: #283D48 !important;
   color: #fff;
+}
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.center {
+  width: 100% !important;
+  margin: 0 auto !important;    
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.active_page {
+  color: #ff9505 !important;
 }

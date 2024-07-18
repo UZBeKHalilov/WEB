@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   let blurValue = 0; // Initial blur value
 
@@ -25,8 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
 
     updateBlur();
-
-
   });
 
   // Click event listener for #home link to reset blurValue
@@ -75,6 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
     uzButton.classList.remove('active');
     ruButton.classList.add('active');
     document.body.style.backgroundColor = ''; // orqa fon rangini default holatga qaytarish uchun
+  });
+
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  navbarToggler.addEventListener('click', function() {
+    const contentDiv = document.querySelector('.content');
+    contentDiv.classList.toggle('blur-background');
   });
 });
 

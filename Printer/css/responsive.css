@@ -1,3 +1,17 @@
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1170px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    #navbarSupportedContent a {
+        padding: 0px 10px !important;
+    }
+}
+
 @media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
@@ -17,15 +31,23 @@
     .slider_section {
         background-size: cover;
         background-position: left;
+        padding-top: 110px !important;
     }
 
     .slider_section .carousel-indicators {
-
         height: 100%;
+    }
+
+    #printing{
+        width: 500px !important;
     }
 }
 
 @media (max-width: 768px) {
+
+    .slider_section {
+        padding-top: 120px !important;
+    }
 
     .slider_section .detail-box {
         text-align: center;
@@ -62,24 +84,45 @@
 
     .client_section .client_container {
         width: 100%;
+    }    
+}
+
+@media (max-width: 576px) {
+    #printing{
+        width: 380px !important;
     }
 }
 
-@media (max-width: 576px) {}
-
 @media (max-width: 480px) {
+
+    #mainA {
+        margin: 0;                
+    }
+
+    #mainA img {
+        width: 50px !important;
+    }
+
+    #mainText {
+        font-size: 15px !important;
+    }
+
+    body > header > div > nav > button {
+        padding: 0 !important;
+    }
+    
+
     .info_section .footer_contact {
         width: 315px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 200px !important;
+        height: 200px !important;
     }
 }
 
 @media (max-width: 400px) {}
 
 @media (max-width: 360px) {}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
-    }
-
-}
