@@ -7,11 +7,12 @@
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 400px;
+    width: 100px;
     height: 400px;
 }
 
 .swiper-slide img {
     display: block;
     width: 100%;
-}
+
+} 
