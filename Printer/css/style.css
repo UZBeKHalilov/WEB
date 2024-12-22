@@ -224,7 +224,7 @@ a:hover, a:focus {
 .slider_section .detail-box .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #ff9505;
+  background-color: #9b5a00;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -320,7 +320,7 @@ a:hover, a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 8px 35px;
-  background-color: #ff9505;
+  background-color: #663c00;
   color: #ffffff;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -330,7 +330,7 @@ a:hover, a:focus {
 .about_section .detail-box a:hover {
   background-color: transparent;
   border-color: #ff9505;
-  color: #ff9505;
+  color: #663c00;
 }
 
 .body_bg {
